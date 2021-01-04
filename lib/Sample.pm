@@ -26,6 +26,23 @@ I thought so too, until I started setting it up.  :)
 Turned out there were a few hiccups that I'd bump into along the way, which I
 needed to get ironed out.
 
+=head2 What you'll find here
+
+The following F<workflows/> are provided, and are suitable for copying into
+your F<.github/workflows/> directory in your repository.
+
+=head3 F<workflows/perl-ci.yml>
+
+Two-stage workflow, suitable for I<most> of my needs.
+
+=head3 F<workflows/perl-ci-with-recommends.yml>
+
+Same two-stage workflow, but with separate matrix entries for running tests in
+the second stage "with" and "without" recommended dependencies installed.
+
+Useful when a distribution has "recommends", and I want to make sure that the
+test suite will pass even if those modules aren't installed.
+
 =head2 Things I learned while setting this up
 
 =head3 Two-stage builds better replicate the final results
