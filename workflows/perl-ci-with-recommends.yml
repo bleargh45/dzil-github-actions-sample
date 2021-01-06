@@ -36,6 +36,13 @@ jobs:
           name: tarball
           path: "*.gz"
 
+      - name: Archive CPM logs
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: build.log
+          path: ~/.perl-cpm/build.log*
+
   test:
     name: "Perl v${{ matrix.perl-version }} / ${{ matrix.recommends }}"
     needs: build
