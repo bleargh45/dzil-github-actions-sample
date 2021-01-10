@@ -114,6 +114,16 @@ Also, note that this one is C<@v1>, as (as of this writing), C<@stable> is an
 older release and does not support the ability for us to pass through
 C<--installdeps .>
 
+=head3 Dump info on which version of Perl is being used
+
+While I might be asking for a C<perl:5.14> container to run the tests in, that
+doesn't help much with figuring out what I<minor> version of Perl is running.
+Nor does it help indicate what patches (if any) are in use, or what settings
+were used to compile Perl.
+
+Thus, having a step that simply runs C<perl -V> is useful.  While you may
+never need that info, the B<one> time that you do, it will be worth having.
+
 =head1 Author
 
 Graham TerMarsch (cpan@howlingfrog.com)
