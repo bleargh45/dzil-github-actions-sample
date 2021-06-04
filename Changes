@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+0.03      2021-06-04 09:46:21-07:00 America/Vancouver
     - Add Perl v5.32 to the matrix of Perl versions we test against.  Latest is
       now v5.34, so let's be explicit about wanting to include 5.32 in our
       matrix.
