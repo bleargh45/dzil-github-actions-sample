@@ -1,4 +1,7 @@
 {{$NEXT}}
+    - Add Perl v5.32 to the matrix of Perl versions we test against.  Latest is
+      now v5.34, so let's be explicit about wanting to include 5.32 in our
+      matrix.
 
 0.02      2021-01-10 23:41:41-08:00 America/Vancouver
     - Archive the CPM logs, in the event of failure to install dependencies in
