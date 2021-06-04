@@ -1,6 +1,6 @@
 package Sample;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 # ABSTRACT: Sample GitHub Actions workflows, for a Dist::Zilla based distribution
 
