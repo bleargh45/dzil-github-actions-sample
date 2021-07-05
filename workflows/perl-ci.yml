@@ -15,6 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Perl version
+        run: perl -V
+
       - name: Install CPM + Dist::Zilla Author Bundle
         uses: perl-actions/install-with-cpm@stable
         with:
