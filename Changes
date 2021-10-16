@@ -1,4 +1,5 @@
 {{$NEXT}}
+    - Run CI builds not just on "push", but also on all "pull_request"s
 
 0.03      2021-06-04 09:46:21-07:00 America/Vancouver
     - Add Perl v5.32 to the matrix of Perl versions we test against.  Latest is
