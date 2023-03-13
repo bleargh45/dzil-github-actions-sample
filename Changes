@@ -1,4 +1,6 @@
 {{$NEXT}}
+    - Run a scheduled CI build weekly
+    - Drop support for Perl v5.8 and v5.10
 
 0.04      2022-04-30 11:34:44-07:00 America/Vancouver
     - Run CI builds not just on "push", but also on all "pull_request"s
